@@ -56,3 +56,43 @@ a.create-orphanage {
 a.create-orphanage:hover {
     background: #17d6eb;
 }
+
+
+/*mudancas no mapa*/
+
+.leaflet-popup-content-wrapper {
+    background: rgba(255, 255, 255, 0, 8);
+    border-radius: 20px;
+}
+
+.leaflet-popup-content {
+    color: #0089a5;
+    margin: .8rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leaflet-popup-content a {
+    width: 4rem;
+    height: 4rem;
+    background: #15c3d6;
+    box-shadow: 17.2828px 17.65px 41.48px rgba(23, 142, 166, 0.16);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s;
+}
+
+.leaflet-popup-content a:hover {
+    background: #17d6eb;
+}
+
+.leaflet-popup-tip {
+    display: none;
+}
+
+.leaflet-container {
+    font: 700 2rem/1 'Nunito', sans-serif;
+}
