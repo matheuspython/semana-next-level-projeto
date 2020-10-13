@@ -12,9 +12,23 @@
     }
 }
 
+@keyframes right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translatex(0);
+    }
+}
+
 .animate-up {
     animation-name: up;
     animation-duration: 300ms;
     animation-fill-mode: backwards;
     /*vai deixar as propriedades do to la no keyframe fiquem permanentes no elemento*/
+}
+
+.animate-right {
+    animation-name: right;
+    animation-duration: 800ms;
 }
