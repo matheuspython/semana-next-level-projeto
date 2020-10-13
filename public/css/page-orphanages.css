@@ -1,0 +1,53 @@
+#page-orphanages {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+aside {
+    width: clamp(34rem, 25vw, 44rem);
+    background: linear-gradient(329.54deg, #15B6D6 0%, #15D6D6 100%);
+    padding: clamp(3rem, 5vw, 8rem);
+    display: flex;
+    flex-direction: column;
+    /*ta mudando o comportamento do flex pra ao invez de bicar na mesma linha dar uma sensaçao de display block*/
+    justify-content: space-between;
+    /*assim como no index mas aqui esta sendo usado pra deixar os elementos no extremo do aside*/
+}
+
+aside h2 {
+    margin-top: 6.4rem;
+    font: clamp(2rem, 5vw, 3.6rem)/1.1 'Nunito', sans-serif;
+}
+
+aside p {
+    margin-top: 2.4rem;
+    font: 400 1.6rem/1.5 'Nunito', sans-serif;
+}
+
+aside footer p {
+    margin-top: 2rem;
+}
+
+
+/*button*/
+
+a.create-orphanage {
+    position: absolute;
+    bottom: 4rem;
+    right: 4rem;
+    width: 6.4rem;
+    height: 6.4rem;
+    background: #15C3D6;
+    border: 0;
+    border-radius: 2rem;
+    /*alinhando o botao no meio graças ao display flex*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 200ms;
+}
+
+a.create-orphanage:hover {
+    background: #17d6eb;
+}
