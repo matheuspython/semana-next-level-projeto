@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    color: white;
+}
+
+body,
+input,
+button,
+textarea {
+    font: 400 18px/1 'Nunito', sans-serif;
+}
+
+
+/*em pega a altura do elemento anterior e o rem pega a altura do html
+:root {
+    font-size: 16px; o valor pode ser em % tbm
+}
+o root muda o tamanho do original pra quando vc usar o em estar com outro tamanho
+*/
+
+:root {
+    font-size: 62.5%;
+}

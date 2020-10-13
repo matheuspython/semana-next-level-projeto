@@ -1,0 +1,60 @@
+#page-landing {
+    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    /*align-items: center; alinha os elementos da div no centro mas em cima e em baixo*/
+}
+
+#container {
+    margin: auto;
+    width: 90%;
+    /*so ta conseguindo alinhar pq o elemento anterior tem o display flex*/
+    /*alinha os elementos da div em todas as direçoes tanto no height quanto no width*/
+}
+
+.location,
+h1,
+.visit p {
+    height: 16vh;
+}
+
+.visit a {
+    width: 8rem;
+    height: 8rem;
+    background: #ffd666;
+    border: 0;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    /*vai colocar o item no centro da tag sso que de cima pra baixo e no centro*/
+    justify-content: center;
+    /*vai deixar o item centralizado na tag*/
+    margin: auto;
+    transition: background 200ms;
+    /*a transiçao da animaçao no hover vai ser de 200s*/
+}
+
+.visit a:hover {
+    background: #96feff;
+}
+
+#logo {
+    animation-delay: 50ms;
+}
+
+.location {
+    animation-delay: 100ms;
+}
+
+main h1 {
+    animation-duration: 150ms;
+}
+
+.visit p {
+    animation-delay: 200ms;
+}
+
+.visit a {
+    animation-delay: 250ms;
+}
