@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../public/css/main.css">
     <link rel="stylesheet" href="../public/css/animations.css">
-    <link rel="stylesheet" href="../public/css/page-orphanages.css">
+    <link rel="stylesheet" href="../public/css/page-orphanage.css">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <!-- Make sure you put this AFTER Leaflet's CSS -->
@@ -20,32 +20,41 @@
 
     <body>
         <div id="page-orphanages">
-            <aside class="animate-right">
-
+            <aside class="animate-right sidebar">
+                <img src="../public/images/map-marker.svg" alt="Happy">
+                <footer>
+                    <button onclick="history.back()"><!--function js pra voltar uma pagina-->
+                        <img src="../public/images/arrow-back.svg" alt="Voltar">
+                    </button>
+                </footer>
             </aside>
 
-            <main>
+            <main class="animate-appear with-sidebar">
                 <div class="orphanage-details">
                     <img src="../public/images/home.jpg" alt="">
                     <div class="images">
-                        <button class="active" type="button">
-                            <img src="../public/images/home.jpg" alt="lar das meninas" >
+                        <button onclick="selectimage(event)" class="active" type="button">
+                            <img src="https://source.unsplash.com/random?id=1" alt="lar das meninas" >
                         </button>
 
-                        <button type="button">
-                            <img src="../public/images/home.jpg" alt="lar das meninas" >
+                        <button onclick="selectimage(event)" type="button">
+                            <img src="https://source.unsplash.com/random?id=2" alt="lar das meninas" >
                         </button>
 
-                        <button type="button">
-                            <img src="../public/images/home.jpg" alt="lar das meninas" >
+                        <button onclick="selectimage(event)" type="button">
+                            <img src="https://source.unsplash.com/random?id=3" alt="lar das meninas" >
                         </button>
 
-                        <button type="button">
-                            <img src="../public/images/home.jpg" alt="lar das meninas" >
+                        <button onclick="selectimage(event)" type="button">
+                            <img src="https://source.unsplash.com/random?id=4" alt="lar das meninas" >
                         </button>
 
-                        <button type="button">
-                            <img src="../public/images/home.jpg" alt="lar das meninas" >
+                        <button onclick="selectimage(event)" type="button">
+                            <img src="https://source.unsplash.com/random?id=5" alt="lar das meninas" >
+                        </button>
+
+                        <button onclick="selectimage(event)" type="button">
+                            <img src="https://source.unsplash.com/random?id=6" alt="lar das meninas" >
                         </button>
                     </div>
                     <!--images-->
@@ -75,7 +84,7 @@
                             </div>
                         </div>
                         <!--open-details-->
-                        <button class="primari-button" type="button">
+                        <button class="primary-button" type="button">
                             <img src="../public/images/whatsapp.svg" alt="chamar no whatsapp">
                             Entrar em contato
                         </button>
@@ -88,7 +97,7 @@
             </main>
         </div>
         <!--page-orphanages-->
-        <script src="../js/script.js"></script>
+        <script src="../js/page-orphanage.js"></script>
     </body>
 
 </html>
