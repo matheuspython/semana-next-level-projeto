@@ -1,0 +1,26 @@
+{
+    "name": "semana-next-level-projeto",
+    "version": "1.0.0",
+    "description": "projeto para portifolio da semana next level da rocketseat criando um site com o objetivo de ajudar crianças carentes",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon src/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/matheuspython/semana-next-level-projeto.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/matheuspython/semana-next-level-projeto/issues"
+    },
+    "homepage": "https://github.com/matheuspython/semana-next-level-projeto#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "hbs": "^4.1.1",
+        "nodemon": "^2.0.5",
+        "sqlite-async": "^1.1.0"
+    }
+}
